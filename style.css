@@ -1,0 +1,404 @@
+/* =============================================
+   Explore Japan - Main Stylesheet
+   Created for COM4014 Web Authoring Assignment
+   ============================================= */
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f9f6f1;
+    color: #2c2c2c;
+    line-height: 1.7;
+}
+
+/* ---- NAVIGATION BAR ---- */
+nav {
+    background-color: #8b0000;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+nav .logo {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 0;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 18px 14px;
+    display: block;
+    font-size: 0.95em;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #6b0000;
+}
+
+nav ul li a.active {
+    background-color: #5a0000;
+    border-bottom: 3px solid #ffd700;
+}
+
+/* ---- HERO SECTION ---- */
+.hero {
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark overlay over hero image */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-text {
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    background-color: #8b0000;
+    color: #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    border: 2px solid #ffd700;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #6b0000;
+}
+
+/* ---- MAIN CONTENT AREA ---- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Section heading style */
+.section-title {
+    font-size: 2em;
+    color: #8b0000;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #8b0000;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.section-intro {
+    font-size: 1.05em;
+    margin-bottom: 30px;
+    color: #444;
+    font-family: Arial, sans-serif;
+    max-width: 750px;
+}
+
+/* ---- CARD GRID (used on home and destinations pages) ---- */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    width: calc(33% - 20px);
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 18px;
+}
+
+.card-body h3 {
+    color: #8b0000;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ---- INFO SECTION (two column layout) ---- */
+.info-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-section img {
+    width: 420px;
+    height: 280px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 4px solid #8b0000;
+}
+
+.info-section .info-text h2 {
+    color: #8b0000;
+    font-size: 1.7em;
+    margin-bottom: 12px;
+}
+
+.info-section .info-text p {
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.75;
+}
+
+/* Flip the image to the right on alternate sections */
+.info-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ---- TIPS LIST ---- */
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.tips-list li {
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    color: #444;
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.tips-list li::before {
+    content: "✓";
+    color: #8b0000;
+    position: absolute;
+    left: 5px;
+    font-weight: bold;
+}
+
+/* ---- GALLERY ---- */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: calc(33.33% - 10px);
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #ffffff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* ---- CONTACT FORM ---- */
+.contact-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.contact-info h3 {
+    color: #8b0000;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+
+.contact-form h3 {
+    color: #8b0000;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+/* Style each form group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8b0000;
+    background-color: #fff;
+}
+
+.form-group textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #8b0000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 35px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border: 2px solid #8b0000;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #6b0000;
+}
+
+/* ---- HIGHLIGHT BOX ---- */
+.highlight-box {
+    background-color: #fff5f5;
+    border-left: 5px solid #8b0000;
+    padding: 18px 22px;
+    margin: 25px 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    color: #444;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    background-color: #2c2c2c;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
