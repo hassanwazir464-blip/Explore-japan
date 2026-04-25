@@ -1,17 +1,24 @@
 <!DOCTYPE html>
+<!-- Tells the browser this is an HTML5 document -->
 <html lang="en">
 <head>
+    <!-- Sets the character encoding so special characters display correctly -->
     <meta charset="UTF-8">
+    <!-- Makes the page scale correctly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Japan - Home</title>
+    <!-- Links this page to the shared stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation bar - appears at the top of every page -->
     <nav>
+        <!-- Logo that links back to the home page -->
         <a href="index.html" class="logo">&#127481;&#127475; Explore Japan</a>
+        <!-- List of links to all pages on the site -->
         <ul>
+            <!-- class="active" highlights the current page in the nav -->
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="destinations.html">Destinations</a></li>
             <li><a href="food-culture.html">Food &amp; Culture</a></li>
@@ -21,96 +28,102 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero section - large banner image at the top of the page -->
+    <!-- The background image is set inline using a style attribute -->
     <div class="hero" style="background-image: url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=1400&q=80');">
+        <!-- Text that sits on top of the hero image -->
         <div class="hero-text">
             <h1>Discover Japan</h1>
             <p>Ancient traditions, modern wonders &mdash; your adventure begins here</p>
+            <!-- Button that links to the destinations page -->
             <a href="destinations.html" class="btn">Explore Destinations</a>
         </div>
     </div>
 
-    <!-- Main Content -->
+    <!-- Main content area - container limits the max width and centres it -->
     <div class="container">
 
+        <!-- Welcome section heading and intro paragraph -->
         <h2 class="section-title">Welcome to Explore Japan</h2>
         <p class="section-intro">
-            Japan is one of the most unique and fascinating travel destinations in the world. From the neon-lit
-            streets of Tokyo to the ancient temples of Kyoto, Japan offers something for every kind of traveller.
-            Whether you are visiting for the first time or returning for another adventure, this website will
-            help you plan the perfect trip.
+            Japan is one of the most unique and fascinating travel destinations in the world.
+            From the neon-lit streets of Tokyo to the ancient temples of Kyoto, Japan offers
+            something for every kind of traveller. Whether you are visiting for the first time
+            or returning for another adventure, this website will help you plan the perfect trip.
         </p>
 
-        <!-- Why Visit Japan box -->
+        <!-- Highlighted information box -->
         <div class="highlight-box">
-            <strong>Why visit Japan?</strong> Japan ranked as one of the world's top travel destinations due
-            to its blend of rich history, incredible food, stunning nature, and warm hospitality.
-            It is also considered one of the safest countries in the world for tourists.
+            <strong>Why visit Japan?</strong> Japan ranked as one of the world's top travel
+            destinations due to its blend of rich history, incredible food, stunning nature,
+            and warm hospitality. It is also considered one of the safest countries in the
+            world for tourists.
         </div>
 
-        <!-- Featured Destinations cards -->
+        <!-- Featured destination cards section -->
         <h2 class="section-title" style="margin-top: 40px;">Featured Destinations</h2>
         <p class="section-intro">Here are some of the most popular places to visit in Japan:</p>
 
+        <!-- Card grid - displays three destination cards side by side -->
         <div class="card-grid">
 
+            <!-- Card 1 - Tokyo -->
             <div class="card">
+                <!-- alt attribute describes the image for accessibility and screen readers -->
                 <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80" alt="Tokyo city skyline at night">
                 <div class="card-body">
                     <h3>Tokyo</h3>
-                    <p>Japan's capital city is a massive, buzzing metropolis full of world-class food, shopping,
-                       technology, and entertainment. A must-see for any visitor.</p>
+                    <p>Japan's capital city is a massive, buzzing metropolis full of world-class
+                    food, shopping, technology, and entertainment. A must-see for any visitor.</p>
                 </div>
             </div>
 
+            <!-- Card 2 - Kyoto -->
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Kyoto temple with red lanterns">
                 <div class="card-body">
                     <h3>Kyoto</h3>
-                    <p>Known as the cultural heart of Japan, Kyoto is home to hundreds of ancient temples,
-                       traditional geisha districts, and beautiful bamboo forests.</p>
+                    <p>Known as the cultural heart of Japan, Kyoto is home to hundreds of ancient
+                    temples, traditional geisha districts, and beautiful bamboo forests.</p>
                 </div>
             </div>
 
+            <!-- Card 3 - Osaka -->
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600&q=80" alt="Osaka street food market">
                 <div class="card-body">
                     <h3>Osaka</h3>
                     <p>Famous for its amazing street food and lively nightlife, Osaka is known as
-                       Japan's "kitchen". It is a city full of energy, fun, and delicious food.</p>
+                    Japan's "kitchen". A city full of energy, fun, and delicious food.</p>
                 </div>
             </div>
 
         </div>
 
-        <!-- About Japan section -->
+        <!-- About Japan section - image and text displayed side by side -->
         <h2 class="section-title" style="margin-top: 50px;">About Japan</h2>
         <div class="info-section" style="margin-top: 20px;">
             <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80" alt="Cherry blossom trees in Japan">
+            <!-- Text content next to the image -->
             <div class="info-text">
                 <h2>A Land of Beauty and Contrast</h2>
-                <p>
-                    Japan is an island nation located in East Asia, made up of four main islands and thousands
-                    of smaller ones. It is known for its incredible natural beauty, including Mount Fuji,
-                    cherry blossom season, and stunning coastal scenery.
-                </p>
-                <p>
-                    At the same time, Japan is one of the most technologically advanced countries in the world,
-                    with high-speed trains, futuristic cities, and cutting-edge innovation. This contrast between
-                    old and new is what makes Japan so special to visit.
-                </p>
-                <p>
-                    The best time to visit is during spring (March to May) for cherry blossoms, or autumn
-                    (September to November) for beautiful red and orange foliage.
-                </p>
+                <p>Japan is an island nation located in East Asia, made up of four main islands
+                and thousands of smaller ones. It is known for its incredible natural beauty,
+                including Mount Fuji, cherry blossom season, and stunning coastal scenery.</p>
+                <p>At the same time, Japan is one of the most technologically advanced countries
+                in the world, with high-speed trains, futuristic cities, and cutting-edge
+                innovation. This contrast between old and new is what makes Japan so special.</p>
+                <p>The best time to visit is during spring (March to May) for cherry blossoms,
+                or autumn (September to November) for beautiful red and orange foliage.</p>
                 <a href="destinations.html" class="btn" style="margin-top: 10px;">See All Destinations</a>
             </div>
         </div>
 
     </div>
 
-    <!-- Footer -->
+    <!-- Footer - appears at the bottom of every page -->
     <footer>
+        <!-- Quick links row in the footer -->
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="destinations.html">Destinations</a>
@@ -119,6 +132,7 @@
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact Us</a>
         </div>
+        <!-- Copyright notice - &copy; produces the © symbol -->
         <p>&copy; 2024 Explore Japan. Images sourced from Unsplash (free to use under Unsplash License).</p>
     </footer>
 

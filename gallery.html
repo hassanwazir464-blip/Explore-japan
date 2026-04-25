@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation bar - same on every page -->
     <nav>
         <a href="index.html" class="logo">&#127481;&#127475; Explore Japan</a>
         <ul>
@@ -16,12 +16,13 @@
             <li><a href="destinations.html">Destinations</a></li>
             <li><a href="food-culture.html">Food &amp; Culture</a></li>
             <li><a href="travel-tips.html">Travel Tips</a></li>
+            <!-- active class marks Gallery as the current page -->
             <li><a href="gallery.html" class="active">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero banner for the gallery page -->
     <div class="hero" style="background-image: url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=1400&q=80');">
         <div class="hero-text">
             <h1>Photo Gallery</h1>
@@ -29,20 +30,23 @@
         </div>
     </div>
 
+    <!-- Main content -->
     <div class="container">
 
         <h2 class="section-title">Explore Through Images</h2>
         <p class="section-intro">
-            Browse our collection of photos from across Japan. All images were sourced from Unsplash
-            and are free to use under the Unsplash License.
+            Browse our collection of photos from across Japan. All images were sourced from
+            Unsplash and are free to use under the Unsplash License.
         </p>
 
-        <!-- Gallery grid -->
+        <!-- Gallery grid - displays images in a 3 column layout
+             flex-wrap in the CSS means they stack on smaller screens -->
         <div class="gallery-grid">
 
+            <!-- Each image has a descriptive alt attribute for accessibility -->
             <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=700&q=80" alt="Mount Fuji with snow cap and clear blue sky">
 
-            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=700&q=80" alt="Tokyo city skyline at night with lights reflecting on the water">
+            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=700&q=80" alt="Tokyo city skyline at night">
 
             <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80" alt="Kyoto temple surrounded by trees and a pond">
 
@@ -56,25 +60,26 @@
 
             <img src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=700&q=80" alt="A bowl of steaming ramen noodles">
 
-            <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=700&q=80" alt="Osaka Dotonbori at night with colourful lights and reflections">
+            <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=700&q=80" alt="Osaka Dotonbori at night with colourful lights">
 
             <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=700&q=80" alt="Traditional Japanese street with wooden buildings">
 
-            <img src="https://images.unsplash.com/photo-1617196034876-2b896e5f2af7?w=700&q=80" alt="Matcha green tea in a ceramic bowl">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=700&q=80" alt="Matcha green tea in a ceramic bowl">
 
-            <img src="https://images.unsplash.com/photo-1601823984263-4a28ec902db0?w=700&q=80" alt="Hiroshima Peace Memorial dome building">
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=700&q=80" alt="Hiroshima Peace Memorial dome building">
 
         </div>
 
-        <!-- Image credit note -->
+        <!-- Image credit note - important for referencing -->
         <p style="margin-top: 25px; font-family: Arial, sans-serif; font-size: 0.85em; color: #888; font-style: italic;">
-            All images are sourced from <a href="https://www.unsplash.com" style="color: #8b0000;" target="_blank">Unsplash.com</a>
-            and are free to use under the Unsplash License. Photographers credited in the reference list.
+            All images sourced from <a href="https://www.unsplash.com" style="color: #8b0000;" target="_blank">Unsplash.com</a>
+            <!-- target="_blank" opens the link in a new tab -->
+            and are free to use under the Unsplash License.
         </p>
 
     </div>
 
-    <!-- Footer -->
+    <!-- Footer - same on every page -->
     <footer>
         <div class="footer-links">
             <a href="index.html">Home</a>
