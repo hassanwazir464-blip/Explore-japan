@@ -447,3 +447,72 @@ footer .footer-links {
     gap: 20px;
     flex-wrap: wrap; /* Wraps links onto a new line on smaller screens */
 }
+/* ---- MOBILE RESPONSIVE STYLES ---- */
+/* These rules only apply when the screen is 768px wide or less */
+@media (max-width: 768px) {
+
+    /* Stack nav links and make them smaller */
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    nav ul li a {
+        padding: 8px 8px;
+        font-size: 0.8em;
+    }
+
+    /* Make hero shorter and text smaller on mobile */
+    .hero {
+        height: 280px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text p {
+        font-size: 0.95em;
+    }
+
+    /* Stack cards into a single column */
+    .card {
+        width: 100%;
+    }
+
+    /* Stack info sections so image goes above text */
+    .info-section {
+        flex-direction: column !important;
+    }
+
+    /* Make image full width on mobile */
+    .info-section img {
+        width: 100%;
+        height: 220px;
+    }
+
+    /* Stack contact form below contact info */
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    /* Gallery goes to 2 columns on mobile */
+    .gallery-grid img {
+        width: calc(50% - 8px);
+    }
+
+    /* Make section titles smaller */
+    .section-title {
+        font-size: 1.5em;
+    }
+}
